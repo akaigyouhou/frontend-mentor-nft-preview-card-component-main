@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "./static/css/main.df4d7aae.css",
+    "main.js": "./static/js/main.bb05c2b3.js",
+    "static/media/Outfit-SemiBold.ttf": "./static/media/Outfit-SemiBold.5bcf916f17a51d426b1c.ttf",
+    "static/media/Outfit-Light.ttf": "./static/media/Outfit-Light.14cc604de3b37249e3b6.ttf",
+    "static/media/Outfit-Regular.ttf": "./static/media/Outfit-Regular.1b689533f3d80e212743.ttf",
+    "static/media/image-equilibrium.jpg": "./static/media/image-equilibrium.88bdbc91a544a2a4d04a.jpg",
+    "index.html": "./index.html",
+    "static/media/icon-view.svg": "./static/media/icon-view.fedac5512cc6657af397a76d5e03ea37.svg",
+    "static/media/icon-clock.svg": "./static/media/icon-clock.991a65225dab4fadc84345ecb35faa1b.svg",
+    "static/media/icon-ethereum.svg": "./static/media/icon-ethereum.5221f33297e5dc863451e2da9a758c12.svg",
+    "main.df4d7aae.css.map": "./static/css/main.df4d7aae.css.map",
+    "main.bb05c2b3.js.map": "./static/js/main.bb05c2b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df4d7aae.css",
+    "static/js/main.bb05c2b3.js"
+  ]
+}
