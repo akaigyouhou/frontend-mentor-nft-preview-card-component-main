@@ -1,38 +1,194 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-image: url("./mobile-design.jpg"); */
+  background-repeat: no-repeat;
+  background-color: var(--very-dark-blue-main-BG);
+  font-size: 18px;
+  font-family: "Outfit";
+  font-weight: 300;
+  height: 100vh;
+  color: var(--soft-blue);
   display: flex;
-  flex-direction: column;
+}
+
+.card {
+  /* border: 1px solid white; */
+  max-width: 327px;
+  border-radius: 16px;
+  /* border: 0.1px solid white; */
+  margin: auto;
+  padding: 24px 23px;
+  background-color: var(--very-dark-blue-card-BG);
+}
+.container {
+  width: 281px;
+  height: 281px;
+  position: relative;
+  cursor: pointer;
+}
+.content img {
+  width: 100%;
+  border-radius: 10px;
+  /* border: 0.1px solid white; */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 10px;
+}
+.view {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-image: url("./icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container:hover .overlay {
+  background-color: var(--cyan);
+  opacity: 0.5;
+}
+.container:hover .view {
+  opacity: 1;
+}
+.top h1 {
+  /* padding: 10px; */
+  font-size: 22px;
+  color: var(--white);
+  margin: 19px 0 12px;
+  cursor: pointer;
+}
+.top h1:hover {
+  color: var(--cyan);
+}
+.top p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+  font-weight: 300;
+}
+.content .middle {
+  display: flex;
+  justify-content: space-between;
+}
+.middle {
+  margin: 16px 0 10px;
+}
+.middle > p {
+  margin: 0px 0 0;
+}
+.middle .price {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--cyan);
+}
+.middle .ethereum {
+  object-fit: scale-down;
+  width: 11px;
+}
+.price span {
+  padding-left: 6px;
+  font-size: 15.5px;
+  font-weight: 700;
+}
+.middle .time {
+  display: flex;
+  align-items: center;
+}
+.middle .clock {
+  object-fit: scale-down;
+  width: 20px;
+}
+.time span {
+  font-size: 15.5px;
+  padding-left: 5px;
+  font-weight: 400;
+}
+.content hr {
+  margin: 15px 0 17px;
+  border: 0.5px solid var(--very-dark-blue-line);
+}
+.content .bottom {
+  display: flex;
+  align-items: center;
+}
+.bottom .avatar {
+  height: 33px;
+  width: 33px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom > p{
+  padding: 0 0 0 16px;
+  font-size: 15px;
+  margin: 0;
+}
+.bottom .user {
+  padding-left: 2px;
+  color: var(--white);
+  font-size: 15.2px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.bottom .user:hover {
+  color: var(--cyan);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 500px) {
+  /* .App {
+    background-image: url("./desktop-design.jpg");
+    background-size: cover;
+  } */
+  .card {
+    max-width: 345px;
+    /* border: 0.1px solid white; */
+    height: 594px;
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    height: 299px;
+    width: 299px;
   }
+  .top p {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .middle {
+    margin-bottom: 22px;
+  }
+  .bottom p {
+    font-size: 16px;
+  }
+  .bottom .user {
+    font-size: 16px;
+    padding-left: 0px;
+  }
+}
+
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 300;
+  src: url(Outfit-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 400;
+  src: url(Outfit-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 700;
+  src: url(Outfit-SemiBold.ttf) format("truetype");
 }
